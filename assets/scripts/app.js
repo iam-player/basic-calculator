@@ -20,6 +20,8 @@ const calculate = inputValue => {
         output = "";
     } else if (inputValue === "DEL"){
         output = output.slice(0, -1);
+    } else if (operators.includes(inputValue) && output === ""){
+        output = "";
     } else {
         output += inputValue;
     }
