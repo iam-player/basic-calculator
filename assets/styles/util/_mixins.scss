@@ -1,3 +1,10 @@
+
+
+@mixin fontBig() {
+    font-family: $fontFamily;
+    font-size: 1.6rem;
+}
+
 @mixin flexCenter() {
     display: flex;
     justify-content: center;

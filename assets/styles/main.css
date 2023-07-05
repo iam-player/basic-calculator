@@ -42,9 +42,139 @@ a {
   text-decoration: none;
 }
 
+button {
+  all: unset;
+}
+
 /* BELANOSIMA - GOOGLE FONT */
+/* STYLED COMPONENTS */
+div.calculator__container {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div.calculator__background {
+  height: 500px;
+  width: 350px;
+  background-color: #6605e9;
+  color: #fdfefb;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+div.calculator__output {
+  height: 30%;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  text-align: right;
+}
+
+.calculator__output--value {
+  color: #111111;
+}
+
+input {
+  border: 0;
+  background: none;
+  text-align: right;
+  font-size: 3rem;
+}
+
+input::-moz-placeholder {
+  color: #fdfefb;
+  opacity: 1;
+}
+
+input:-ms-input-placeholder {
+  color: #fdfefb;
+  opacity: 1;
+}
+
+input::placeholder {
+  color: #fdfefb;
+  opacity: 1;
+}
+
+.calculator__input {
+  height: 70%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 5px;
+}
+
+.button__input {
+  color: #111111;
+  background-color: #fdfefb;
+  border-radius: 10px;
+  text-align: center;
+}
+
+[data-value="0"] {
+  grid-column: 1/3;
+  grid-row: 5/6;
+}
+
+[data-value="1"] {
+  grid-column: 3/4;
+  grid-row: 4/5;
+}
+
+[data-value="2"] {
+  grid-column: 2/3;
+  grid-row: 4/5;
+}
+
+[data-value="3"] {
+  grid-column: 1/2;
+  grid-row: 4/5;
+}
+
+[data-value="4"] {
+  grid-column: 3/4;
+  grid-row: 3/4;
+}
+
+[data-value="5"] {
+  grid-column: 2/3;
+  grid-row: 3/4;
+}
+
+[data-value="6"] {
+  grid-column: 1/2;
+  grid-row: 3/4;
+}
+
+[data-value="7"] {
+  grid-column: 3/4;
+  grid-row: 2/3;
+}
+
+[data-value="8"] {
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+
+[data-value="9"] {
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+
+[data-value="."] {
+  grid-column: 3/4;
+  grid-row: 5/6;
+}
+
 /* LAYOUTS */
 /* UTIL */
 body {
+  color: #fdfefb;
   background-color: #111111;
+  font-family: "Belanosima", Tahoma, sans-serif;
+  font-size: 1.6rem;
 }/*# sourceMappingURL=main.css.map */

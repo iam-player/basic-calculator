@@ -3,6 +3,9 @@
 @import 'base/variables';
 @import 'base/fonts';
 
+/* STYLED COMPONENTS */
+@import 'components/calculator';
+
 /* LAYOUTS */
 @import 'layout/header';
 @import 'layout/footer';
@@ -12,5 +15,6 @@
 
 body {
     color: $lightColor;
-    background-color: $darkBackground;
+    background-color: $darkColor;
+    @include fontBig();
 }
