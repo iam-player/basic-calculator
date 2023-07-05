@@ -67,7 +67,7 @@ div.calculator__background {
 
 div.calculator__output {
   height: 30%;
-  width: 100%;
+  max-width: 100%;
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
@@ -75,7 +75,9 @@ div.calculator__output {
 }
 
 .calculator__output--value {
-  color: #111111;
+  width: 100%;
+  overflow: scroll;
+  color: #fdfefb;
 }
 
 input {
@@ -113,6 +115,14 @@ input::placeholder {
   background-color: #fdfefb;
   border-radius: 10px;
   text-align: center;
+}
+
+button::-moz-selection {
+  background-color: none;
+}
+
+button::selection {
+  background-color: none;
 }
 
 [data-value="0"] {

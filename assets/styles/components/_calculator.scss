@@ -17,7 +17,7 @@ div.calculator__background{
 
 div.calculator__output{
     height: 30%;
-    width: 100%;
+    max-width: 100%;
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
@@ -25,7 +25,9 @@ div.calculator__output{
 }
 
 .calculator__output--value{
-    color: $darkColor;
+    width: 100%;
+    overflow: scroll;
+    color: $lightColor;
 }
 
 input{
@@ -53,6 +55,10 @@ input::placeholder {
         background-color: $lightColor;
         border-radius: $buttonBorderRadius;
         text-align: center;
+    }
+
+    button::selection{
+        background-color: none;
     }
 
     [data-value="0"]{
