@@ -1,0 +1,16 @@
+/* BASE */
+@import 'base/reset';
+@import 'base/variables';
+@import 'base/fonts';
+
+/* LAYOUTS */
+@import 'layout/header';
+@import 'layout/footer';
+
+/* UTIL */
+@import 'util/mixins';
+
+body {
+    color: $lightColor;
+    background-color: $darkBackground;
+}
