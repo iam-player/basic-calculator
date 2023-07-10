@@ -1,16 +1,14 @@
 @import '../util/mixins';
 
 div.calculator__container{
-    height: 100vh;
-    width: 100%;
     @include flexCenter();
 }
 
 div.calculator__background{
     height: 500px;
     width: 350px;
-    background-color: $accentColor;
-    color: $lightColor;
+    background-color: $lightSecondColor;
+    color: $mainColor;
     border-radius: $defaultBorderRadius;
     padding: 10px;
 }
@@ -27,7 +25,7 @@ div.calculator__output{
 .calculator__output--value{
     width: 100%;
     overflow: scroll;
-    color: $lightColor;
+    color: $mainColor;
 }
 
 input{
@@ -38,7 +36,7 @@ input{
 }
 
 input::placeholder {
-    color: $lightColor;
+    color: $mainColor;
     opacity: 1;
 }
 
@@ -51,8 +49,8 @@ input::placeholder {
 }
 
     .button__input{
-        color: $darkColor;
-        background-color: $lightColor;
+        color: $mainColor;
+        background-color: $accentColor;
         border-radius: $buttonBorderRadius;
         text-align: center;
     }

@@ -49,8 +49,6 @@ button {
 /* BELANOSIMA - GOOGLE FONT */
 /* STYLED COMPONENTS */
 div.calculator__container {
-  height: 100vh;
-  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -59,8 +57,8 @@ div.calculator__container {
 div.calculator__background {
   height: 500px;
   width: 350px;
-  background-color: #6605e9;
-  color: #fdfefb;
+  background-color: #1a1a1a;
+  color: white;
   border-radius: 10px;
   padding: 10px;
 }
@@ -77,7 +75,7 @@ div.calculator__output {
 .calculator__output--value {
   width: 100%;
   overflow: scroll;
-  color: #fdfefb;
+  color: white;
 }
 
 input {
@@ -88,17 +86,17 @@ input {
 }
 
 input::-moz-placeholder {
-  color: #fdfefb;
+  color: white;
   opacity: 1;
 }
 
 input:-ms-input-placeholder {
-  color: #fdfefb;
+  color: white;
   opacity: 1;
 }
 
 input::placeholder {
-  color: #fdfefb;
+  color: white;
   opacity: 1;
 }
 
@@ -111,8 +109,8 @@ input::placeholder {
 }
 
 .button__input {
-  color: #111111;
-  background-color: #fdfefb;
+  color: white;
+  background-color: #8000ff;
   border-radius: 10px;
   text-align: center;
 }
@@ -183,8 +181,37 @@ button::selection {
 /* LAYOUTS */
 /* UTIL */
 body {
-  color: #fdfefb;
-  background-color: #111111;
+  color: white;
+  background-color: #141414;
   font-family: "Belanosima", Tahoma, sans-serif;
   font-size: 1.6rem;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+}
+
+aside {
+  height: 500px;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  background-color: #1a1a1a;
+  margin-left: 20px;
+  border-radius: 10px;
+  padding: 15px;
+}
+aside h2 {
+  font-size: 1.3rem;
+}
+aside ul {
+  list-style-type: square;
+  padding-left: 20px;
+}
+aside ul li {
+  font-size: 1.1rem;
 }/*# sourceMappingURL=main.css.map */
